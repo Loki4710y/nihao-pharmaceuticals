@@ -1,0 +1,328 @@
+.productsPage {
+  background-color: var(--color-white);
+  width: 100%;
+}
+
+.heroSection {
+  background-color: #F8FAFC;
+  padding: 64px 0;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+@media (min-width: 992px) {
+  .heroSection {
+    padding: 80px 0 100px;
+  }
+}
+
+.heroContainer {
+  max-width: 720px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #64748B;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.heroTitle {
+  font-family: var(--font-family-heading);
+  font-size: 48px;
+  font-weight: 700;
+  color: #0F172A;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+
+.heroSubtext {
+  font-size: 18px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* PORTFOLIO GRID */
+.portfolioSection {
+  padding: 64px 0;
+  background-color: var(--color-white);
+}
+
+@media (min-width: 992px) {
+  .portfolioSection {
+    padding: 120px 0;
+  }
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .productsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .productsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.productCard {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.productCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -12px rgba(15, 23, 42, 0.1);
+}
+
+.cardImageWrapper {
+  width: 100%;
+  height: 320px;
+  aspect-ratio: 1/1;
+  background-color: #F1F5F9;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardImage {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  transition: transform 500ms ease;
+  mix-blend-mode: multiply;
+}
+
+.productCard:hover .cardImage {
+  transform: scale(1.05);
+}
+
+.cardContent {
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.cardMeta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.cardCategory {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.cardForm {
+  background-color: #F1F5F9;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 100px;
+}
+
+.cardTitle {
+  font-size: 24px;
+  font-family: var(--font-family-heading);
+  font-weight: 700;
+  color: #0F172A;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.cardTagline {
+  font-size: 16px;
+  font-weight: 500;
+  color: #64748B;
+  margin-bottom: 24px;
+}
+
+.cardDesc {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  flex-grow: 1;
+}
+
+.cardAction {
+  padding-top: 24px;
+  border-top: 1px solid #E2E8F0;
+}
+
+.actionText {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* DEVELOPMENT SECTION */
+.developmentSection {
+  background-color: #F8FAFC;
+  padding: 64px 0;
+  border-top: 1px solid #E2E8F0;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+@media (min-width: 992px) {
+  .developmentSection {
+    padding: 96px 0;
+  }
+}
+
+.devCard {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  border: 1px dashed #CBD5E1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .devCard {
+    flex-direction: row;
+  }
+}
+
+.devVisual {
+  position: relative;
+  flex: 0 0 40%;
+  aspect-ratio: 4/3;
+  background-color: #E2E8F0;
+}
+
+@media (min-width: 768px) {
+  .devVisual {
+    aspect-ratio: auto;
+  }
+}
+
+.devImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%) opacity(0.5);
+}
+
+.devOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.devBadge {
+  background-color: #1E293B;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.devContent {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.devHeading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0F172A;
+  margin-bottom: 8px;
+}
+
+.devSubheading {
+  font-size: 18px;
+  font-weight: 500;
+  color: #64748B;
+  margin-bottom: 24px;
+}
+
+.devText {
+  font-size: 16px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* INQUIRY SECTION */
+.inquirySection {
+  background-color: #1E293B;
+  padding: 64px 0;
+}
+
+@media (min-width: 992px) {
+  .inquirySection {
+    padding: 96px 0;
+  }
+}
+
+.inquiryContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.inquiryHeading {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: var(--font-family-heading);
+  color: var(--color-white);
+  margin-bottom: 16px;
+}
+
+.inquirySubtext {
+  font-size: 18px;
+  color: #94A3B8;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.inquiryButton {
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+  padding: 14px 32px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 200ms ease;
+}
+
+.inquiryButton:hover {
+  background-color: var(--color-white);
+  color: #1E293B;
+}

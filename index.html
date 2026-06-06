@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nihao Pharmaceuticals® | Premium Nutraceutical Solutions</title>
+    <meta name="description" content="Nihao Pharmaceuticals® provides premium nutraceutical solutions for skin wellness, hair wellness, anti-aging support, immunity and bone health." />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Nihao Pharmaceuticals® | Premium Nutraceutical Solutions" />
+    <meta property="og:description" content="Nihao Pharmaceuticals® provides premium nutraceutical solutions for skin wellness, hair wellness, anti-aging support, immunity and bone health." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nihaopharma.com/" />
+    <meta property="og:image" content="https://nihaopharma.com/logo.png" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nihao Pharmaceuticals® | Premium Nutraceutical Solutions" />
+    <meta name="twitter:description" content="Nihao Pharmaceuticals® provides premium nutraceutical solutions for skin wellness, hair wellness, anti-aging support, immunity and bone health." />
+    <meta name="twitter:image" content="https://nihaopharma.com/logo.png" />
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+  </head>
+  <body>
+    <div id="error-log" style="color: red; padding: 20px; font-family: monospace; white-space: pre-wrap; font-size: 16px;"></div>
+    <script>
+      window.addEventListener('error', function(e) {
+        document.getElementById('error-log').textContent += '\n[' + e.filename + ':' + e.lineno + '] ' + e.message;
+      });
+      window.addEventListener('unhandledrejection', function(e) {
+        document.getElementById('error-log').textContent += '\nUnhandled Promise: ' + (e.reason && e.reason.stack ? e.reason.stack : e.reason);
+      });
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
