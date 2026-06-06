@@ -4,7 +4,7 @@ A modern, responsive, and SEO-optimized pharmaceutical company website built to 
 
 🌐 Live Website
 
-Website: Nihao Pharma
+Website: NihaoPharma.com
 
 📌 Project Overview
 
